@@ -1,0 +1,286 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(294.42deg, #4D194D -0.61%, #006466 83.23%);
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+
+}
+header:hover{
+    background-color: rgba(0,0,0,0.20);
+}
+header > a.title:hover > h1{
+    scale: 1.2;
+    color: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+a:hover{
+    transform: scale(1.2);
+}
+a.header_link{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 41px 4px rgba(0,0,0,0.75);
+
+
+    border-radius: 50px 50px 50px 50px;
+}
+input[type=text],input[type=password]{
+    width: 300px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+input[type=text]:focus,input[type=password]:focus, input[type=submit]:focus{
+    outline: none;
+}
+input[type=submit]{
+    width: 100px;
+    height: 50px;
+    font-size: 1em;
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.20);
+    transition: 0.5s;
+}
+input[type=submit]:hover{
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    transform: scale(1.2);
+}
+
+a.header_link:hover{
+    border: none;
+    transform: scale(1.2);
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+}
+h1.title{
+    color: white;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-weight: 400;
+    font-size: 4em;
+}
+div.login_container{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+div.blog_container{
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+div.login_box{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/8;
+    grid-column: 3/9;
+    border-radius: 50px 50px 50px 50px;
+
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    box-shadow: 0px 0px 41px 4px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.reg_box{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/9;
+    grid-column: 3/9;
+    border-radius: 50px 50px 50px 50px;
+
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    box-shadow: 0px 0px 41px 4px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.article_box{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/10;
+    grid-column: 2/10;
+    border-radius: 50px 50px 50px 50px;
+
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    box-shadow: 0px 0px 41px 4px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.post_box{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 0px 41px 4px rgba(0,0,0,0.75);
+    margin-top: 70px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+div.post_title{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/11;
+    grid-row: 1/4;
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+div.post_title > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+div.post_box > p{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+div.post_text{
+    grid-column: 2/10;
+    grid-row: 5/9;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+div.post_text > p{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+p.post_author{
+    grid-column: 2/5;
+    grid-row: 9/11;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.post_date{
+    grid-column: 7/10;
+    grid-row: 9/11;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+    height: 70%;
+}
+div.form{
+    width: 70%;
+    height: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+h1.defaultSite{
+    grid-row: 2/4;
+    grid-column: 2/10;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-align: center;
+}
+h2.defaultSite{
+    grid-row: 6/8;
+    grid-column: 2/10;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.addpost{
+    grid-column: 2/5;
+    grid-row: 4/8;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 50px 50px 50px;
+
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    box-shadow: 0px 0px 41px 2px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.editpost{
+    grid-column: 7/10;
+    grid-row: 4/8;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 50px 50px 50px;
+
+    background-image: linear-gradient(294.42deg, #006466 -0.61%, #4D194D 83.23%);
+    box-shadow: 0px 0px 41px 2px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

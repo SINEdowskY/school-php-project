@@ -1,0 +1,1 @@
+a tu można bedzie hasla zmieniać jak update bedzie dzialac :)
